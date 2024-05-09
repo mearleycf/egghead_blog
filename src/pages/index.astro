@@ -7,8 +7,8 @@ import Layout from '../layouts/Layout.astro';
 const posts = await getCollection('blog');
 ---
 
-<Layout title='Welcome to Astro.'>
-  <div class='h-64 flex flex-col justify-center items-start'>
+<Layout seo={{title: 'Hello, Astro.'}}>
+  <div class='flex h-64 flex-col items-start justify-center'>
     <h1 class='text-heading-1'>Hello, I'm Lazar Nikolov.</h1>
     <p class='mt-2'>
       I'm a Developer Advocate and Software Engineer. I like writing code and

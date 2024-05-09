@@ -19,8 +19,8 @@ const post: CollectionEntry<'blog'> = Astro.props.post;
 const { Content } = await post.render();
 ---
 
-<Layout title={post.data.title}>
-  <article class='prose max-w-[80ch] mx-auto mt-12'>
+<Layout seo={{title: post.data.title}}>
+  <article class='prose mx-auto mt-12 max-w-[80ch]'>
     <Content />
   </article>
 </Layout>
