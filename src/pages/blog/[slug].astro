@@ -21,7 +21,7 @@ const { Content } = await post.render();
 ---
 
 <Layout seo={{ title: post.data.title, description: post.data.description }}>
-  <article class='prose max-w-[80ch] mx-auto mt-12'>
+  <article class='prose mx-auto mt-12 max-w-[80ch]'>
     <Content />
   </article>
   <PostLike client:visible />
